@@ -1,0 +1,23 @@
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head-bar {
+  background-color: rgba(40, 98, 233, 0.642);
+  text-align: center;
+}
+.center-text{
+    text-align: center;
+    color: rgb(31, 31, 134);
+}
+.img.center-SA{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pace{
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+}

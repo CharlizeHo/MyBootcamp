@@ -1,0 +1,19 @@
+.header{
+    text-align:center;
+}
+.tieude{
+    text-align: center;
+    background-color: rgba(121, 58, 34, 0.918);
+    color: antiquewhite
+}
+.line{
+    width: 65%;
+    size: 10px;
+}
+.carousel{
+    text-align: center;
+    color: rgb(121, 58,34,0.918);
+}
+.body{
+    background-color:rgb(210, 172, 142)
+}
