@@ -1,0 +1,14 @@
+div {
+  width: 500px;
+  height: 950px;
+}
+h2 {
+  font-family: Arial;
+  font-size: 40px;
+  font-style: italic;
+  text-decoration: solid underline;
+  text-transform: uppercase;
+}
+p {
+  line-height: 1.8;
+}
