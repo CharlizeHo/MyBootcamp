@@ -1,0 +1,63 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 100px;
+}
+.title {
+  background-color: rgb(161, 15, 15);
+  color: white;
+  text-align: center;
+}
+.link a {
+  font-size: 20px;
+  text-decoration: none;
+}
+#information {
+  background-color: rgb(161, 15, 15);
+  color: white;
+  font-size: 30px;
+}
+#information h2 {
+  text-align: center;
+  font-size: 40px;
+}
+#information img {
+  width: 600px;
+}
+.bold {
+  color: black;
+  font-size: 30px;
+}
+#progress {
+  background-color: rgb(161, 15, 15);
+  color: white;
+}
+#progress h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+#progress ul {
+  font-size: 20px;
+}
+#progress img {
+  width: 500px;
+}
+.table {
+  width: 900px;
+  height: 800px;
+  margin: auto;
+}
+.table,
+th,
+td {
+  border: 1px solid black;
+}
+.greentea {
+  background-image: url(/demo-02/img/greentea.jpg);
+}
+.blacktea {
+  background-image: url(/demo-02/img/blacktea.jpg);
+}

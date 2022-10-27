@@ -2,9 +2,9 @@ div {
   width: 500px;
   height: 950px;
 }
-h2 {
+h2,
+h3 {
   font-family: Arial;
-  font-size: 40px;
   font-style: italic;
   text-decoration: solid underline;
   text-transform: uppercase;
@@ -12,3 +12,23 @@ h2 {
 p {
   line-height: 1.8;
 }
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 30px;
+  color: gray;
+}
+/* div > h2 {
+  color: red;
+}
+div:first-child h2 {
+  color: green;
+}
+div :nth-child(2) h2{
+  color: blue;
+}
+.title h2 {
+  color: blueviolet;
+} */
+
