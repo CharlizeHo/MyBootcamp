@@ -1,0 +1,76 @@
+.container {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.number a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(139, 21, 21);
+}
+.information {
+  background-color: rgba(247, 244, 241, 0.861);
+}
+.bhistory-p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(139, 21, 21);
+  text-align: center;
+}
+.b-history {
+  text-align: center;
+  background-color: rgb(139, 21, 21);
+  color: white;
+  text-decoration: solid;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+}
+.youtubelogo{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+  height: 100px;
+  left: 100px;
+  top: 230px;
+}
+
+.blurblock {
+  width: 300px;
+  height: 200px;
+  left: 220px;
+  top: 330px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+.line1 {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.line2 {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.flex{
+    display: flex;
+}

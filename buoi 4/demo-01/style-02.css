@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+}
+.hotdeals {
+  width: 1500px;
+  height: 443px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20;
+}
+.container {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .number a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(139, 21, 21);
+  }
+  .information {
+    background-color: rgba(247, 244, 241, 0.861);
+  }
+  
+
+
