@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+    border-bottom: 1px solid ;
+}
+li{
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* margin-left: 16px;    */
+}
+/* li:first-child{
+    margin-left: 0;
+} */
+li:not(:first-child){
+    margin-left: 16px;
+}
+a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 16px 32px;
+}
+a:hover{
+    background-color: plum;
+    color: white;
+}

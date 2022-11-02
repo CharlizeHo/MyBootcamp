@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    gap: 16px;
+}
+li{
+    border: 1px solid #ccc;
+}
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 16px 32px;
+}
+a:hover{
+    display: block;
+    color: white;
+    background-color: rgb(155, 60, 131);
+
+}
