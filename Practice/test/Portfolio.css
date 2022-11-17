@@ -1,0 +1,47 @@
+* {
+  scroll-behavior: smooth;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.logo a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(52, 65, 167, 0.877);
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.nav a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(15, 14, 14, 0.897);
+}
+body {
+  margin: 0;
+  /* position: relative; */
+  height: 200px;
+  width: 100%;
+  border-bottom-left-radius: 70% 60px;
+  border-bottom-right-radius: 30% 10px;
+}
+/* background-image: url(/Practice/img/shapes-desktop.png); */
+
+.background-img {
+  background-image: url(/Practice/img/shapes-desktop.png);
+  border: 1px solid black;
+}
+
+#header {
+  background-image: url(/Practice/img/shapes-desktop.png);
+}

@@ -4,8 +4,12 @@
 #head-bar {
   display: flex;
   justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+#introduction{
+  display: block;
 }
 .logo a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -13,27 +17,42 @@
   text-decoration: none;
   color: rgba(44, 62, 195, 0.877);
 }
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
 .bar-icon a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  margin-right: 30px;
   text-decoration: none;
   color: rgba(15, 14, 14, 0.897);
 }
 .background-img {
-  position: relative;
+  position: absolute;
+  /* box-sizing: content-box; */
   top: 250px;
 }
-.avatar {
-  position: absolute;
+.avatar { 
+  display: flex;
+  position: relative;
+  left: 20px;
+  /* background-color: white; */
   top: 100px;
-  left: 11%;
+}
+.ava-img{
+  top: -40px;
+  position: relative;
+  left: 150px;
 }
 .ava-text {
   position: absolute;
-  width: 800px;
+  width: 600px;
   height: fit-content;
-  left: 70px;
+  left: 20%;
+  top: 70%;
 }
 .contact-icon {
   display: flex;
@@ -42,6 +61,7 @@
 .contact-icon i {
   margin-left: 10px;
 }
-#introduction {
-  background-image: url(./img/shapes-desktop.png);
+
+.PR-1{
+  display: block;
 }
