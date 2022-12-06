@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/babel">
+    let root = document.getElementById("root");
+
+    function App() {
+      // let data = React.useState(0);
+      let [count, setCount] = React.useState(0);
+
+      function countUp() {
+        setCount ((prevState) => prevState + 1);
+      }
+      console.log("render");
+      console.log(count);
+
+      return (
+        <>
+          <h1>Total Click: {count}</h1>
+          <button onClick={countUp}>Click</button>
+        </>
+      );
+    }
+
+    ReactDOM.render(<App />, root);
+
+    // let pizza = ["peperoni", "pineapple"];
+    // let [myFavPizza, myWorstPizza] = pizza;
+    // // Chính là:
+    // // let [myFavPizza, myWorstPizza] = ['peperoni', 'pineapple']
+
+    // let num = [10, 20, 30, 40, 50, "Hello"];
+    // // let a = num[0];
+    // // let b = num[1];
+    // // let c = num[2];
+    // // let d = num[3];
+    // // let e = num[4];
+    // // let f = num[5];
+    // let [a, b, c, d, e, f] = num;
+    // //  Chính là:
+    // // let [a,b,c,d,e] = [10,20,30,40,50, "Hello"]
+
+
+  </script>
+</html>

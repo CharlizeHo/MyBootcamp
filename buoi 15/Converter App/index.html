@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter App</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      * {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/babel">
+    let root = document.getElementById("root");
+
+    function App() {
+      let [amount, setAmount] = React.useState(0);
+      let [trueOrFalse, setTrueOrFalse] = React.useState(true);
+
+      function change(event) {
+        console.log(event);
+        setAmount(event.target.value);
+      }
+      function reset() {
+        setAmount(0);
+      }
+      function swap() {
+        // setTrueOrFalse(function (prev) {
+        //   if (prev === true) {
+        //     return false;
+        //   } else {
+        //     return true;
+        //   }
+        // }); hoặc ngắn gọn hơn:
+        setTrueOrFalse((prev) => !prev); //dấu ! là đổi lại thuộc tính ngược lại với thuộc tính đag có
+      }
+      return (
+        <>
+          <h1 className="title">Converter</h1>
+
+          <div>
+            <label htmlFor="minute">Minute</label>
+            <input
+              type="number"
+              placeholder="Minute"
+              id="minute"
+              value={trueOrFalse ? amount : Math.round(amount * 60)}
+              onChange={change}
+              disabled={trueOrFalse === false}
+              //disabled={!trueOrFalse}
+              
+            />
+          </div>
+
+          <br />
+
+          <label htmlFor="hour">Hour</label>
+          <div>
+            <input
+              type="number"
+              placeholder="Hour"
+              id="hour"
+              value={trueOrFalse ? Math.round(amount / 60) : amount}
+              onChange={change}
+              disabled={trueOrFalse === true}
+              //disabled={trueOrFalse}
+            />
+          </div>
+
+          <br />
+
+          <button onClick={reset}>Reset</button>
+          <button onClick={swap}>Swap</button>
+        </>
+      );
+    }
+
+    ReactDOM.render(<App />, root);
+  </script>
+</html>

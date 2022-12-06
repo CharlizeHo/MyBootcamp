@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="container">
+        <div><h1>Total click: 0</h1></div>
+        <button>Click</button>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <script>
+      let root = document.getElementById("root");
+
+      let title = React.createElement(
+        "h1",
+        {
+          id: "title",
+          style: { color: "red" },
+          onMouseenter: () => {
+            console.log('Mouse Enter!');
+          }, //tên event PHẢI CAPITALIZED chữ cái từ tiếp theo
+        },
+        "Total click: 0"
+      );
+      //truyền vào { } hồng những attributes (thuộc tính) như id, class, style, src,...
+
+      let button = React.createElement(
+        "button",
+        {
+          style: { backgroundColor: "tomato" },
+          onClick: () => {
+            console.log("Click!");
+          },
+        }, //tên event PHẢI CAPITALIZED chữ cái từ tiếp theo
+        "Click"
+      );
+      let container = React.createElement(
+        "div",
+        {
+          id: "container",
+        },
+        [title, button]
+      );
+
+      ReactDOM.render(container, root);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.nav-button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.nav-button--primary{
+    background-color: rgb(23, 125, 23);
+    color: white;
+}
+
+.nav-button--secondary{
+    background-color: rgb(231, 214, 183);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/babel">
+    let root = document.getElementById("root");
+
+    function App() {
+      // let data = React.useState(0);
+      let [count, setCount] = React.useState(0);
+      let [name, setName] = React.useState("")
+
+      function countUp() {
+        setCount ((prevState) => prevState + 1);
+      }
+      console.log("render");
+      console.log(count);
+      function enterName(event){
+        setName(event.target.value);
+      }
+
+      //everytime
+      // React.useEffect( 1. Callback function, 2. Array (optional))
+      React.useEffect( () => {
+        console.log("render 🔵");
+      })
+      //render + count update
+      React.useEffect(()=>{
+        console.log("update count 🟣");
+      }, [count]);
+      //render + name update
+      React.useEffect(()=>{
+        console.log("update name 🟠");
+      }, [name]);
+
+      return (
+        <>
+          <h1>Total Click: {count}</h1>
+          <button onClick={countUp}>Click</button>
+          <input type="text" value={name} onChange={enterName} />
+          <div>Name: {name}</div>
+        </>
+      );
+    }
+
+    ReactDOM.render(<App />, root);
+
+  </script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // const greeting = document.createElement("h1")
+      // greeting.classList.add("greeting"); //add thêm class vào element
+      // //cách 2: greeting.className = "greeting";
+      // greeting.innerText = "Hello World"
+      // console.log(greeting);
+
+      // const root = document.getElementById("root");
+      // root.appendChild(greeting);
+
+      //__________________//
+
+      //   const greeting = React.createElement(
+      //     "h1",
+      //     { className: greeting },
+      //     "Hello World"
+      //   );
+      //   console.log(greeting);
+
+      //_________________//
+
+      function NavBar() {
+        return (
+          <div>
+            <ul>
+            <li><a>Hello World</a></li>
+            </ul>
+          </div>
+        );
+      }
+
+      function Content() {
+        return (
+          <div>
+            <h1>Hello World</h1>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            //{Content}
+            <Content /> //
+          </div>
+        );
+      }
+
+      const root = document.getElementById("root");
+      console.log(root);
+
+      ReactDOM.createRoot(root).render(<App />);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/babel">
+    let root = document.getElementById("root");
+    let count = 0;
+    function render() {
+      ReactDOM.render(<App />, root);
+    }
+
+    function App() {
+      function countUp() {
+        count++;
+        render();
+      }
+
+      return (
+        //chỉ được return ra 1 thẻ => có thể gom vào 1 thẻ div;
+        // rồi rút ngắn thẻ div lại còn <> và </>
+        <>
+          <h1>Total Click: {count}</h1>
+          <button onClick={countUp}>Click</button>
+        </>
+      );
+    }
+    render();
+  </script>
+</html>
