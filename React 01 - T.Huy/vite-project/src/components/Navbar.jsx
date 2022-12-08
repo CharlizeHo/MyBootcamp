@@ -22,22 +22,22 @@ const Navbar = () => {
             {/* Navlist */}
             <ul className="hidden md:flex justify-between items-center gap-6">
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>About
+                <a className="text-sm text-gray-500" href="#">About</a>
               </li>
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>Careers
+                <a className="text-sm text-gray-500" href="#">Careers</a>
               </li>
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>History
+                <a className="text-sm text-gray-500" href="#">History</a>
               </li>
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>Services
+                <a className="text-sm text-gray-500" href="#">Services</a>
               </li>
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>Projects
+                <a className="text-sm text-gray-500" href="#">Projects</a>
               </li>
               <li>
-                <a className="text-sm text-gray-500" href="#"></a>Blog
+                <a className="text-sm text-gray-500" href="#">Blog</a>
               </li>
             </ul>
           </div>
